@@ -17,14 +17,17 @@
 
 		<! Profil/Login anzeige !>
 		<div id = "profile">
-			<form action = "./sites/login.php" method = "post">
-				Benutzername<input type = "text" name = "user"><br />
-				Passwort<input type = "text" name = "pass"><br />
-				<input type = "submit" value = "login">
-			</form>
-			<form action = "./sites/register.php" method = "post">
-				<input type = "submit" value = "Registrieren">
-			</form>
+			<table>
+				<form action = "./sites/login.php" method = "post">
+				
+					<tr><td>Benutzername</td><td><input type = "text" name = "user"></td></tr>
+					<tr><td>Passwort</td><td><input type = "text" name = "pass"></td></tr>
+					<tr><td><input type = "submit" value = "login"></td>
+					</form>
+				<form action = "./sites/register.php" method = "post">
+					<td><input type = "submit" value = "Registrieren"></td></tr>
+			</table>
+				</form>
 		</div>
 
 

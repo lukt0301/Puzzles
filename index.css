@@ -6,13 +6,21 @@ height: 100%;
 a:link { text-decoration:none; color:#00000}
 #menue 	{	width:100%;
 			height:3%;
+			margin-top: 1%;
 			
 			position: relative;
+		}
+#menue a{
+			border: solid;
+			padding: 15px 20px;
+			border-color: #000000;
+			color: #000000;
+			border-radius: 30px;
 		}
 #menue li {   
 			list-style: none;
 			float: left;
-			margin-right: 2%;
+			margin-right: 5%;
 			position: relative;
 		}
 #profile {
@@ -23,6 +31,7 @@ a:link { text-decoration:none; color:#00000}
 			position: relative;
 		}
 #content{
+			font-family: Arial;
 			width: 20%;
 			height: 15%;
 			margin-left: 41%;
@@ -39,7 +48,11 @@ a:link { text-decoration:none; color:#00000}
 			margin-right: 40%;
 			position: relative;
 		}
+#footer a	{
+			color: #000000;
+		}
 #footer {
+			margin-bottom: 1%;
 			width: 100%;
 			height: 3%;
 			position: absolute;
@@ -48,7 +61,12 @@ a:link { text-decoration:none; color:#00000}
 #footer li {
 			float: left;
 			list-style: none;
-			margin-right: 2%
+			margin-right: 5%;
+			border: solid;
+			padding: 15px 20px;
+			border-color: #000000;
+			color: #000000;
+			border-radius: 30px;
 			
 		}
 		
