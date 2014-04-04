@@ -8,7 +8,6 @@
 
 		<! Kopfzeile mit Links !>
 		<div id = "menue">
-			<li><a href="./sites/search.php">Suche</a></li> 
 			<ul>
 			<li><a href="./sites/search.php">Suche</a></li>
 			<li><a href="./sites/forum.php">Forum</a></li>
