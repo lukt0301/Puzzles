@@ -1,4 +1,0 @@
-Puzzles
-=======
-
-Projekt XXX
