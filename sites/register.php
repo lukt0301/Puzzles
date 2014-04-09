@@ -15,9 +15,11 @@
 	}
 
 	$username  = checkInput($_POST["Username"]);
+	$prename   = checkInput($_POST["Prename"]);
+	$name      = checkInput($_POST["Name"]);
 	$email     = checkInput($_POST["Email"]);
 	$password  = checkInput($_POST["Password"];)
-	$password2 = checkInput($_POST["Password"]);
+	$password2 = checkInput($_POST["Password2"]);
 
 	$error = array();
 	$errorcount = 0;
@@ -43,6 +45,21 @@
 		array_push($error, "Die eingegebene Email-Adresse ist falsch");
 		$errorcount++;
 	} 
+
+	mysql_select_db("Puzzles");
+	$query = "SELECT Username FROM Users";
+
+	$userexist = 0;
+	for ($i=0; $i < count($query); $i++) { 
+		if($query[$i] == $username) {
+			$userexist = 1;
+			array_push($error, "Der Benutzername existiert bereits");
+			$errorcount++;
+		}
+	}
+
+	
+
 
 	if ($errorcount == 0) {
 		// Aufruf Seite Registrierung erfolgreich
