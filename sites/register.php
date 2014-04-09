@@ -58,18 +58,28 @@
 		}
 	}
 
-	
 
 
 	if ($errorcount == 0) {
 		// Aufruf Seite Registrierung erfolgreich
+		$query = sprintf("INSERT INTO Users (Username, Prename, Name, Password, EMail) VALUES ('%s','%s','%s','%s','%s')",
+				mysql_real_escape_string($username),
+   				mysql_real_escape_string($prename),
+   				mysql_real_escape_string($name),
+   				mysql_real_escape_string($password),
+   				mysql_real_escape_string($email));
+
 		echo "<meta http-equiv ='refresh' content = 5; URL = 'anmelden_schreiben.php'> "
 	}
-	else {
-		for ($i=0; $i < ; $i++) { 
-			
-		}
 
+	else {
+
+		echo "<div id = 'error'>";
+		for ($i=0; $i < $errorcount ; $i++) { 
+			echo $errorcount[$i] . "<br />";
+		}
+		echo "</div>";
+		echo "<a href = './register.html'>Zurück </a>";
 	}
 
 
